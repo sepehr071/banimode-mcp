@@ -1,0 +1,331 @@
+{
+ "status": "success",
+ "status_code": 200,
+ "message": "List of products.",
+ "data": {
+  "data": [],
+  "filters": {
+   "features": [],
+   "max_price": 825000000,
+   "manufacturers": [
+    {
+     "name": "السانا",
+     "en_name": "Elsana",
+     "id": 1867
+    },
+    {
+     "name": "بوکان",
+     "en_name": "Bookan",
+     "id": 1885
+    },
+    {
+     "name": "ریس",
+     "en_name": "Rees",
+     "id": 283
+    },
+    {
+     "name": "شندی",
+     "en_name": "Shandy",
+     "id": 3481
+    },
+    {
+     "name": "بلونیل",
+     "en_name": "Bluenil",
+     "id": 1552
+    },
+    {
+     "name": "سرژه",
+     "en_name": "Serge",
+     "id": 305
+    },
+    {
+     "name": "مانگ",
+     "en_name": "Mong",
+     "id": 830
+    },
+    {
+     "name": "زاگرس",
+     "en_name": "Zagros",
+     "id": 848
+    },
+    {
+     "name": "لوسیفر",
+     "en_name": "Lusifer",
+     "id": 849
+    },
+    {
+     "name": "نارین مد",
+     "en_name": "Narin Mode",
+     "id": 1462
+    },
+    {
+     "name": "آروما",
+     "en_name": "Aroma",
+     "id": 522
+    },
+    {
+     "name": "ریسانی",
+     "en_name": "Rissani",
+     "id": 2590
+    },
+    {
+     "name": "تولیکا",
+     "en_name": "Tulika",
+     "id": 447
+    },
+    {
+     "name": "برندس",
+     "en_name": "Brands",
+     "id": 479
+    },
+    {
+     "name": "نگار ندائی",
+     "en_name": "Negar Nedaei",
+     "id": 1279
+    },
+    {
+     "name": "ورساچه جینز",
+     "en_name": "Versace Jeans",
+     "id": 823
+    },
+    {
+     "name": "موریک",
+     "en_name": "Murik",
+     "id": 2320
+    },
+    {
+     "name": "سوپردرای",
+     "en_name": "Superdry",
+     "id": 488
+    },
+    {
+     "name": "فلای فشن",
+     "en_name": "Fly Fashion",
+     "id": 3742
+    },
+    {
+     "name": "آر ان اس",
+     "en_name": "RNS",
+     "id": 82
+    },
+    {
+     "name": "مونو",
+     "en_name": "Mono",
+     "id": 2872
+    },
+    {
+     "name": "فدیکو",
+     "en_name": "Fedyco",
+     "id": 1018
+    },
+    {
+     "name": "پیرکاردین",
+     "en_name": "PierreCardin",
+     "id": 965
+    },
+    {
+     "name": "بهبود",
+     "en_name": "Behboud",
+     "id": 834
+    },
+    {
+     "name": "جوتی جینز",
+     "en_name": "JootiJeans",
+     "id": 2
+    }
+   ],
+   "colors_group": [],
+   "categories": [
+    {
+     "name": "مد و پوشاک",
+     "id": 3151,
+     "id_parent": 2,
+     "level": 2,
+     "items": [
+      {
+       "name": "لباس زنانه",
+       "id": 4,
+       "parent_id": 3151,
+       "level": 3
+      },
+      {
+       "name": "سایز بزرگ",
+       "id": 1274,
+       "parent_id": 3151,
+       "level": 3
+      },
+      {
+       "name": "کت زنانه",
+       "id": 702,
+       "parent_id": 4,
+       "level": 4
+      },
+      {
+       "name": "ست رسمی و کژوال زنانه",
+       "id": 1172,
+       "parent_id": 4,
+       "level": 4
+      },
+      {
+       "name": "شومیز زنانه",
+       "id": 670,
+       "parent_id": 4,
+       "level": 4
+      },
+      {
+       "name": "مانتو",
+       "id": 668,
+       "parent_id": 4,
+       "level": 4
+      },
+      {
+       "name": "مانتو کوتاه",
+       "id": 2015,
+       "parent_id": 668,
+       "level": 5
+      },
+      {
+       "name": "کت پارچه ای زنانه",
+       "id": 2207,
+       "parent_id": 702,
+       "level": 5
+      }
+     ],
+     "items_tree": []
+    },
+    {
+     "name": "ورزش و سفر",
+     "id": 1208,
+     "id_parent": 2,
+     "level": 2,
+     "items": [
+      {
+       "name": "لباس ورزشی",
+       "id": 3559,
+       "parent_id": 1208,
+       "level": 3
+      },
+      {
+       "name": "لباس ورزشی زنانه",
+       "id": 720,
+       "parent_id": 3559,
+       "level": 4
+      },
+      {
+       "name": "ست ورزشی زنانه",
+       "id": 727,
+       "parent_id": 720,
+       "level": 4
+      }
+     ],
+     "items_tree": []
+    }
+   ],
+   "sizes": [
+    {
+     "name": "XS",
+     "id": 19,
+     "position": 3
+    },
+    {
+     "name": "S",
+     "id": 6,
+     "position": 4
+    },
+    {
+     "name": "M",
+     "id": 7,
+     "position": 5
+    },
+    {
+     "name": "L",
+     "id": 5,
+     "position": 6
+    },
+    {
+     "name": "XL",
+     "id": 2,
+     "position": 7
+    },
+    {
+     "name": "XXL",
+     "id": 3,
+     "position": 8
+    },
+    {
+     "name": "4XL",
+     "id": 258,
+     "position": 10
+    },
+    {
+     "name": "5XL",
+     "id": 797,
+     "position": 11
+    },
+    {
+     "name": "S-M",
+     "id": 1219,
+     "position": 18
+    },
+    {
+     "name": "L-XL",
+     "id": 1181,
+     "position": 20
+    },
+    {
+     "name": "10-12 سال",
+     "id": 2027,
+     "position": 100
+    },
+    {
+     "name": "13-16 سال",
+     "id": 2821,
+     "position": 112
+    }
+   ],
+   "colors": []
+  },
+  "extra_filters": null,
+  "links": {},
+  "meta": {
+   "size_reference_exist": [],
+   "category_info": {},
+   "category_top_menus": [],
+   "category_top_tags": [],
+   "has_promotion": true,
+   "has_filter": true,
+   "page_title": "محصولات بانی مد",
+   "link_rewrite": "",
+   "page_description": "",
+   "footer_description": "",
+   "brand_logo": "",
+   "show_flash_sales": false,
+   "default_sort": "default",
+   "default_stock": true,
+   "filters_status": {
+    "sizes": true,
+    "categories": true,
+    "colors": true,
+    "manufacturers": true
+   },
+   "seo_noindex": 0,
+   "sitemap": 0,
+   "keywords": "",
+   "meta_title": "",
+   "seo_canonical": "",
+   "meta_description": "",
+   "sidebar_display": 0,
+   "active": 0,
+   "exists": false,
+   "seo_redirect": "",
+   "seller_info": null,
+   "current_page": 1,
+   "from": 1,
+   "last_page": 10000,
+   "per_page": 1,
+   "to": 2,
+   "total": 10000
+  },
+  "url": ""
+ }
+}

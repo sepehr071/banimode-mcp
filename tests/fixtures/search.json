@@ -1,0 +1,686 @@
+{
+ "status": "success",
+ "status_code": 200,
+ "message": "List of products.",
+ "data": {
+  "data": [
+   {
+    "id_product": 154537,
+    "id_product_attribute": 0,
+    "id_color": 22,
+    "color_reference": "154537-22",
+    "product_reference": "AM-CS-81003",
+    "link": "BM-154537/مانتو-زنانه-کافه-شرت-cafe-shirt-کد-81003.html?color=22",
+    "click_id": "SE__07258B872DA0FEA6__1",
+    "new_link": "",
+    "color_link": "BM-154537/مانتو-زنانه-کافه-شرت-cafe-shirt-کد-81003.html?color=22",
+    "color_link_new": "BM-154537/مانتو-زنانه-کافه-شرت-cafe-shirt-کد-81003.html?color=22",
+    "product_name": "مانتو بلند زنانه کافه شرت مدل 81003",
+    "product_price": 1880000,
+    "product_manufacturer_name": "کافه شرت",
+    "product_manufacturer_en_name": "Cafe Shirt",
+    "product_manufacturer_id": 1414,
+    "product_manufacturer_slug": "کافه_شرت",
+    "product_category_default_name_en": "مانتو بلند زنانه",
+    "product_base_price": 1880000,
+    "product_final_price": 657800,
+    "product_specific_price": {
+     "specific_price": 657800,
+     "discount_percent": 65,
+     "discount_amount": 1222200,
+     "from": null,
+     "to": null
+    },
+    "color_name": "کرم",
+    "color_slug": "کرم",
+    "color_value": "#FFF5EE",
+    "id_color_group": 0,
+    "images": {
+     "large_default": [
+      "https://www.banimode.com/1500973-large_default/154537.jpg",
+      "https://www.banimode.com/1500976-large_default/154537.jpg"
+     ]
+    },
+    "total_qty": 1,
+    "size": [
+     {
+      "name": "S",
+      "active": 1,
+      "slug": "S",
+      "show_in_filter": true,
+      "id_size": 6,
+      "extra_barcodes": [],
+      "position": 4,
+      "display_barcode": "201100196911",
+      "sellers": [
+       {
+        "id_seller": 1,
+        "score": 5,
+        "base_price": 1880000,
+        "final_price": 657800,
+        "specific_price": {
+         "specific_price": 657800,
+         "discount_percent": 65,
+         "discount_amount": 1222200,
+         "from": null,
+         "to": null
+        },
+        "specific_price_date_from": "0000-00-00 00:00:00",
+        "specific_price_date_to": "0000-00-00 00:00:00",
+        "barcode": "201100196911",
+        "id_product_attribute": 940900,
+        "quantity": 1,
+        "has_quantity": 1
+       }
+      ],
+      "has_quantity": 1
+     },
+     {
+      "name": "M",
+      "active": 1,
+      "slug": "M",
+      "show_in_filter": true,
+      "id_size": 7,
+      "extra_barcodes": [],
+      "position": 5,
+      "display_barcode": "201100196912",
+      "sellers": [
+       {
+        "id_seller": 1,
+        "score": 5,
+        "base_price": 1880000,
+        "final_price": 657800,
+        "specific_price": {
+         "specific_price": 657800,
+         "discount_percent": 65,
+         "discount_amount": 1222200,
+         "from": null,
+         "to": null
+        },
+        "specific_price_date_from": "0000-00-00 00:00:00",
+        "specific_price_date_to": "0000-00-00 00:00:00",
+        "barcode": "201100196912",
+        "id_product_attribute": 940903,
+        "quantity": 0,
+        "has_quantity": 0
+       }
+      ],
+      "has_quantity": 0
+     }
+    ],
+    "promotion_label": {
+     "title": "ارسال سریع از بانی مد",
+     "icon": "/assets/img/icon/gift2.svg",
+     "background_color": "#562430",
+     "text_color": "#FFFFFF",
+     "icon_color": "#FFFFFF",
+     "show_in": "both"
+    },
+    "banijet_tag": null,
+    "available_notify": true,
+    "flash_sale_message_show": false,
+    "flash_sale_message": [],
+    "product_score": null
+   },
+   {
+    "id_product": 154549,
+    "id_product_attribute": 0,
+    "id_color": 22,
+    "color_reference": "154549-22",
+    "product_reference": "AM-CS-81001",
+    "link": "BM-154549/مانتو-زنانه-کافه-شرت-cafe-shirt-کد-81001.html?color=22",
+    "click_id": "SE__07258B872DA0FEA6__2",
+    "new_link": "",
+    "color_link": "BM-154549/مانتو-زنانه-کافه-شرت-cafe-shirt-کد-81001.html?color=22",
+    "color_link_new": "BM-154549/مانتو-زنانه-کافه-شرت-cafe-shirt-کد-81001.html?color=22",
+    "product_name": "مانتو بلند زنانه کافه شرت مدل 81001",
+    "product_price": 1880000,
+    "product_manufacturer_name": "کافه شرت",
+    "product_manufacturer_en_name": "Cafe Shirt",
+    "product_manufacturer_id": 1414,
+    "product_manufacturer_slug": "کافه_شرت",
+    "product_category_default_name_en": "مانتو بلند زنانه",
+    "product_base_price": 1880000,
+    "product_final_price": 752000,
+    "product_specific_price": {
+     "specific_price": 752000,
+     "discount_percent": 60,
+     "discount_amount": 1128000,
+     "from": null,
+     "to": null
+    },
+    "color_name": "کرم",
+    "color_slug": "کرم",
+    "color_value": "#FFF5EE",
+    "id_color_group": 0,
+    "images": {
+     "large_default": [
+      "https://www.banimode.com/1635691-large_default/154549.jpg",
+      "https://www.banimode.com/1635694-large_default/154549.jpg"
+     ]
+    },
+    "total_qty": 10,
+    "size": [
+     {
+      "name": "S",
+      "active": 1,
+      "slug": "S",
+      "show_in_filter": true,
+      "id_size": 6,
+      "extra_barcodes": [],
+      "position": 4,
+      "display_barcode": "201033198231",
+      "sellers": [
+       {
+        "id_seller": 1,
+        "score": 5,
+        "base_price": 1880000,
+        "final_price": 752000,
+        "specific_price": {
+         "specific_price": 752000,
+         "discount_percent": 60,
+         "discount_amount": 1128000,
+         "from": null,
+         "to": null
+        },
+        "specific_price_date_from": "0000-00-00 00:00:00",
+        "specific_price_date_to": "0000-00-00 00:00:00",
+        "barcode": "201033198231",
+        "id_product_attribute": 1042936,
+        "quantity": 15,
+        "has_quantity": 1
+       }
+      ],
+      "has_quantity": 1
+     },
+     {
+      "name": "M",
+      "active": 1,
+      "slug": "M",
+      "show_in_filter": true,
+      "id_size": 7,
+      "extra_barcodes": [],
+      "position": 5,
+      "display_barcode": "201033198232",
+      "sellers": [
+       {
+        "id_seller": 1,
+        "score": 5,
+        "base_price": 1880000,
+        "final_price": 752000,
+        "specific_price": {
+         "specific_price": 752000,
+         "discount_percent": 60,
+         "discount_amount": 1128000,
+         "from": null,
+         "to": null
+        },
+        "specific_price_date_from": "0000-00-00 00:00:00",
+        "specific_price_date_to": "0000-00-00 00:00:00",
+        "barcode": "201033198232",
+        "id_product_attribute": 1042939,
+        "quantity": 0,
+        "has_quantity": 0
+       }
+      ],
+      "has_quantity": 0
+     }
+    ],
+    "promotion_label": {
+     "title": "ارسال سریع از بانی مد",
+     "icon": "/assets/img/icon/gift2.svg",
+     "background_color": "#562430",
+     "text_color": "#FFFFFF",
+     "icon_color": "#FFFFFF",
+     "show_in": "both"
+    },
+    "banijet_tag": null,
+    "available_notify": true,
+    "flash_sale_message_show": false,
+    "flash_sale_message": [],
+    "product_score": null
+   },
+   {
+    "id_product": 109550,
+    "id_product_attribute": 0,
+    "id_color": 40,
+    "color_reference": "109550-40",
+    "product_reference": "AM-MON-7641021015",
+    "link": "BM-109550/مانتو-زنانه-مانگ-mong-مدل-تورین.html?color=40",
+    "click_id": "SE__07258B872DA0FEA6__3",
+    "new_link": "",
+    "color_link": "BM-109550/مانتو-زنانه-مانگ-mong-مدل-تورین.html?color=40",
+    "color_link_new": "BM-109550/مانتو-زنانه-مانگ-mong-مدل-تورین.html?color=40",
+    "product_name": "مانتو زنانه مانگ Mong مدل تورین",
+    "product_price": 2480000,
+    "product_manufacturer_name": "مانگ",
+    "product_manufacturer_en_name": "Mong",
+    "product_manufacturer_id": 830,
+    "product_manufacturer_slug": "مانگ",
+    "product_category_default_name_en": "مانتو کوتاه",
+    "product_base_price": 2480000,
+    "product_final_price": 768800,
+    "product_specific_price": {
+     "specific_price": 768800,
+     "discount_percent": 69,
+     "discount_amount": 1711200,
+     "from": null,
+     "to": null
+    },
+    "color_name": "آبی روشن",
+    "color_slug": "آبی_روشن",
+    "color_value": "#87CEFA",
+    "id_color_group": 0,
+    "images": {
+     "large_default": [
+      "https://www.banimode.com/1158942-large_default/109550.jpg",
+      "https://www.banimode.com/1158944-large_default/109550.jpg"
+     ]
+    },
+    "total_qty": 1,
+    "size": [
+     {
+      "name": "2",
+      "active": 1,
+      "slug": "2",
+      "show_in_filter": true,
+      "id_size": 704,
+      "extra_barcodes": [],
+      "position": 129,
+      "display_barcode": "76410210150622",
+      "sellers": [
+       {
+        "id_seller": 1,
+        "score": 5,
+        "base_price": 2480000,
+        "final_price": 768800,
+        "specific_price": {
+         "specific_price": 768800,
+         "discount_percent": 69,
+         "discount_amount": 1711200,
+         "from": null,
+         "to": null
+        },
+        "specific_price_date_from": "0000-00-00 00:00:00",
+        "specific_price_date_to": "0000-00-00 00:00:00",
+        "barcode": "76410210150622",
+        "id_product_attribute": 726860,
+        "quantity": 1,
+        "has_quantity": 1
+       }
+      ],
+      "has_quantity": 1
+     },
+     {
+      "name": "1",
+      "active": 1,
+      "slug": "1",
+      "show_in_filter": true,
+      "id_size": 705,
+      "extra_barcodes": [],
+      "position": 128,
+      "display_barcode": "76410210150621",
+      "sellers": [
+       {
+        "id_seller": 1,
+        "score": 5,
+        "base_price": 2480000,
+        "final_price": 768800,
+        "specific_price": {
+         "specific_price": 768800,
+         "discount_percent": 69,
+         "discount_amount": 1711200,
+         "from": null,
+         "to": null
+        },
+        "specific_price_date_from": "0000-00-00 00:00:00",
+        "specific_price_date_to": "0000-00-00 00:00:00",
+        "barcode": "76410210150621",
+        "id_product_attribute": 726858,
+        "quantity": 0,
+        "has_quantity": 0
+       }
+      ],
+      "has_quantity": 0
+     }
+    ],
+    "promotion_label": {
+     "title": "ارسال سریع از بانی مد",
+     "icon": "/assets/img/icon/gift2.svg",
+     "background_color": "#562430",
+     "text_color": "#FFFFFF",
+     "icon_color": "#FFFFFF",
+     "show_in": "both"
+    },
+    "banijet_tag": null,
+    "available_notify": true,
+    "flash_sale_message_show": false,
+    "flash_sale_message": [],
+    "product_score": null
+   }
+  ],
+  "filters": {
+   "sizes": [
+    {
+     "name": "XS",
+     "id": 19,
+     "position": 3
+    },
+    {
+     "name": "S",
+     "id": 6,
+     "position": 4
+    },
+    {
+     "name": "M",
+     "id": 7,
+     "position": 5
+    },
+    {
+     "name": "L",
+     "id": 5,
+     "position": 6
+    },
+    {
+     "name": "XL",
+     "id": 2,
+     "position": 7
+    },
+    {
+     "name": "XXL",
+     "id": 3,
+     "position": 8
+    },
+    {
+     "name": "4XL",
+     "id": 258,
+     "position": 10
+    },
+    {
+     "name": "5XL",
+     "id": 797,
+     "position": 11
+    },
+    {
+     "name": "S-M",
+     "id": 1219,
+     "position": 18
+    },
+    {
+     "name": "L-XL",
+     "id": 1181,
+     "position": 20
+    },
+    {
+     "name": "10-12 سال",
+     "id": 2027,
+     "position": 100
+    },
+    {
+     "name": "13-16 سال",
+     "id": 2821,
+     "position": 112
+    }
+   ],
+   "colors": [],
+   "manufacturers": [
+    {
+     "name": "السانا",
+     "en_name": "Elsana",
+     "id": 1867
+    },
+    {
+     "name": "بوکان",
+     "en_name": "Bookan",
+     "id": 1885
+    },
+    {
+     "name": "ریس",
+     "en_name": "Rees",
+     "id": 283
+    },
+    {
+     "name": "شندی",
+     "en_name": "Shandy",
+     "id": 3481
+    },
+    {
+     "name": "بلونیل",
+     "en_name": "Bluenil",
+     "id": 1552
+    },
+    {
+     "name": "سرژه",
+     "en_name": "Serge",
+     "id": 305
+    },
+    {
+     "name": "مانگ",
+     "en_name": "Mong",
+     "id": 830
+    },
+    {
+     "name": "زاگرس",
+     "en_name": "Zagros",
+     "id": 848
+    },
+    {
+     "name": "لوسیفر",
+     "en_name": "Lusifer",
+     "id": 849
+    },
+    {
+     "name": "نارین مد",
+     "en_name": "Narin Mode",
+     "id": 1462
+    },
+    {
+     "name": "آروما",
+     "en_name": "Aroma",
+     "id": 522
+    },
+    {
+     "name": "ریسانی",
+     "en_name": "Rissani",
+     "id": 2590
+    },
+    {
+     "name": "تولیکا",
+     "en_name": "Tulika",
+     "id": 447
+    },
+    {
+     "name": "برندس",
+     "en_name": "Brands",
+     "id": 479
+    },
+    {
+     "name": "نگار ندائی",
+     "en_name": "Negar Nedaei",
+     "id": 1279
+    },
+    {
+     "name": "ورساچه جینز",
+     "en_name": "Versace Jeans",
+     "id": 823
+    },
+    {
+     "name": "موریک",
+     "en_name": "Murik",
+     "id": 2320
+    },
+    {
+     "name": "سوپردرای",
+     "en_name": "Superdry",
+     "id": 488
+    },
+    {
+     "name": "فلای فشن",
+     "en_name": "Fly Fashion",
+     "id": 3742
+    },
+    {
+     "name": "آر ان اس",
+     "en_name": "RNS",
+     "id": 82
+    },
+    {
+     "name": "مونو",
+     "en_name": "Mono",
+     "id": 2872
+    },
+    {
+     "name": "فدیکو",
+     "en_name": "Fedyco",
+     "id": 1018
+    },
+    {
+     "name": "پیرکاردین",
+     "en_name": "PierreCardin",
+     "id": 965
+    },
+    {
+     "name": "بهبود",
+     "en_name": "Behboud",
+     "id": 834
+    },
+    {
+     "name": "جوتی جینز",
+     "en_name": "JootiJeans",
+     "id": 2
+    }
+   ],
+   "features": [],
+   "categories": [
+    {
+     "name": "مد و پوشاک",
+     "id": 3151,
+     "id_parent": 2,
+     "level": 2,
+     "items": [
+      {
+       "name": "لباس زنانه",
+       "id": 4,
+       "parent_id": 3151,
+       "level": 3
+      },
+      {
+       "name": "سایز بزرگ",
+       "id": 1274,
+       "parent_id": 3151,
+       "level": 3
+      },
+      {
+       "name": "کت زنانه",
+       "id": 702,
+       "parent_id": 4,
+       "level": 4
+      },
+      {
+       "name": "ست رسمی و کژوال زنانه",
+       "id": 1172,
+       "parent_id": 4,
+       "level": 4
+      },
+      {
+       "name": "شومیز زنانه",
+       "id": 670,
+       "parent_id": 4,
+       "level": 4
+      },
+      {
+       "name": "مانتو",
+       "id": 668,
+       "parent_id": 4,
+       "level": 4
+      },
+      {
+       "name": "مانتو کوتاه",
+       "id": 2015,
+       "parent_id": 668,
+       "level": 5
+      },
+      {
+       "name": "کت پارچه ای زنانه",
+       "id": 2207,
+       "parent_id": 702,
+       "level": 5
+      }
+     ],
+     "items_tree": []
+    },
+    {
+     "name": "ورزش و سفر",
+     "id": 1208,
+     "id_parent": 2,
+     "level": 2,
+     "items": [
+      {
+       "name": "لباس ورزشی",
+       "id": 3559,
+       "parent_id": 1208,
+       "level": 3
+      },
+      {
+       "name": "لباس ورزشی زنانه",
+       "id": 720,
+       "parent_id": 3559,
+       "level": 4
+      },
+      {
+       "name": "ست ورزشی زنانه",
+       "id": 727,
+       "parent_id": 720,
+       "level": 4
+      }
+     ],
+     "items_tree": []
+    }
+   ],
+   "colors_group": [],
+   "max_price": 89980000
+  },
+  "extra_filters": null,
+  "links": {},
+  "meta": {
+   "size_reference_exist": [],
+   "category_info": {},
+   "category_top_menus": [],
+   "category_top_tags": [],
+   "has_promotion": true,
+   "has_filter": true,
+   "page_title": "جستجوی مانتو",
+   "link_rewrite": "",
+   "page_description": "",
+   "footer_description": "",
+   "brand_logo": "",
+   "show_flash_sales": false,
+   "default_sort": "default",
+   "default_stock": true,
+   "filters_status": {
+    "sizes": true,
+    "categories": true,
+    "colors": true,
+    "manufacturers": true
+   },
+   "seo_noindex": 0,
+   "sitemap": 0,
+   "keywords": "",
+   "meta_title": "",
+   "seo_canonical": "",
+   "meta_description": "",
+   "sidebar_display": 0,
+   "active": 0,
+   "exists": false,
+   "seo_redirect": "",
+   "seller_info": null,
+   "current_page": 1,
+   "from": 1,
+   "last_page": 110,
+   "per_page": 3,
+   "to": 4,
+   "total": 328
+  },
+  "url": ""
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "status": "success",
+ "status_code": 200,
+ "message": "Get product #30490's comments.",
+ "data": {
+  "comments": [
+   {
+    "id": 770107,
+    "title": "مانتو",
+    "content": "تنخور خوبی نداره و سرشونه هاش خیلی بزرگه",
+    "customer_name": "کاربر بانی مد",
+    "grade": 3,
+    "date_add": "2025-10-09T07:28:47.000000Z",
+    "rate": 2,
+    "answer": "",
+    "sender": "",
+    "date_answer": "0000-00-00 00:00:00",
+    "is_buyer": 1,
+    "feedbacks": [],
+    "attachments": []
+   },
+   {
+    "id": 583891,
+    "title": "کت جین",
+    "content": "عالی از نظر جنس و طرح",
+    "customer_name": "کاربر بانی مد",
+    "grade": 0,
+    "date_add": "2025-02-25T11:32:34.000000Z",
+    "rate": 1,
+    "answer": "",
+    "sender": "",
+    "date_answer": "0000-00-00 00:00:00",
+    "is_buyer": 1,
+    "feedbacks": [],
+    "attachments": []
+   },
+   {
+    "id": 225352,
+    "title": "کیفیت",
+    "content": "خیلی خوشگل و با کیفیته",
+    "customer_name": "نازنین خدامی",
+    "grade": 0,
+    "date_add": "2023-01-05T18:41:19.000000Z",
+    "rate": 1,
+    "answer": null,
+    "sender": null,
+    "date_answer": null,
+    "is_buyer": 1,
+    "feedbacks": [],
+    "attachments": []
+   }
+  ],
+  "media_comment": [],
+  "links": {},
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 4,
+   "per_page": 10,
+   "to": 11,
+   "total": 40
+  }
+ }
+}

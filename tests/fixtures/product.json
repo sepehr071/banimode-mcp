@@ -1,0 +1,350 @@
+{
+ "status": "success",
+ "status_code": 200,
+ "message": "Get product #270643.",
+ "data": {
+  "colors": [
+   {
+    "id_product_attribute": 0,
+    "id_color": 22,
+    "color_reference": "270643-22",
+    "reference": "",
+    "link": "BM-270643/مانتو-زنانه-تولیکا-Tulika-کد-72493.html#/رنگ-کرم",
+    "new_link": "BM-270643/مانتو-زنانه-تولیکا-Tulika-کد-72493.html?color=رنگ-کرم",
+    "product_price": 5998100,
+    "product_base_price": 5998000,
+    "product_final_price": 1799400,
+    "product_specific_price": {
+     "specific_price": 1799400,
+     "discount_percent": 70,
+     "discount_amount": 4198600,
+     "from": "2026-10-20 12:00:00",
+     "to": "2026-10-20 23:59:59"
+    },
+    "has_related_category": 1,
+    "related_category": [
+     "1733",
+     "1734"
+    ],
+    "has_product_set": 1,
+    "product_sets": [
+     "410248-1",
+     "318070-306",
+     "442636-39"
+    ],
+    "color_name": "کرم",
+    "color_slug": "کرم",
+    "color_value": "#FFF5EE",
+    "images": {
+     "large_default": [
+      "https://www.banimode.com/3988148-large_default/270643.jpg",
+      "https://www.banimode.com/3988169-large_default/270643.jpg"
+     ]
+    },
+    "new_images": [],
+    "videos": [],
+    "size": [
+     {
+      "name": "42",
+      "active": 1,
+      "slug": "42",
+      "show_in_filter": true,
+      "id_size": 134,
+      "extra_barcodes": [],
+      "position": 184,
+      "display_barcode": "724930142",
+      "sellers": [
+       {
+        "id_seller": 1,
+        "score": 5,
+        "base_price": 5998000,
+        "final_price": 2399000,
+        "specific_price": {
+         "specific_price": 1799400,
+         "discount_percent": 70,
+         "discount_amount": 4198600,
+         "from": null,
+         "to": null
+        },
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "724930142",
+        "id_product_attribute": 1379284,
+        "quantity": 1,
+        "has_quantity": 1
+       }
+      ],
+      "has_quantity": 1
+     },
+     {
+      "name": "38",
+      "active": 1,
+      "slug": "38",
+      "show_in_filter": true,
+      "id_size": 94,
+      "extra_barcodes": [],
+      "position": 176,
+      "display_barcode": "724930138",
+      "sellers": [
+       {
+        "id_seller": 1,
+        "score": 5,
+        "base_price": 5998000,
+        "final_price": 2399000,
+        "specific_price": {
+         "specific_price": 1799400,
+         "discount_percent": 70,
+         "discount_amount": 4198600,
+         "from": null,
+         "to": null
+        },
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "724930138",
+        "id_product_attribute": 1379278,
+        "quantity": 0,
+        "has_quantity": 0
+       }
+      ],
+      "has_quantity": 0
+     },
+     {
+      "name": "40",
+      "active": 1,
+      "slug": "40",
+      "show_in_filter": true,
+      "id_size": 97,
+      "extra_barcodes": [],
+      "position": 180,
+      "display_barcode": "724930140",
+      "sellers": [
+       {
+        "id_seller": 1,
+        "score": 5,
+        "base_price": 5998000,
+        "final_price": 2399000,
+        "specific_price": {
+         "specific_price": 1799400,
+         "discount_percent": 70,
+         "discount_amount": 4198600,
+         "from": null,
+         "to": null
+        },
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "724930140",
+        "id_product_attribute": 1379281,
+        "quantity": 0,
+        "has_quantity": 0
+       }
+      ],
+      "has_quantity": 0
+     },
+     {
+      "name": "44",
+      "active": 1,
+      "slug": "44",
+      "show_in_filter": true,
+      "id_size": 131,
+      "extra_barcodes": [],
+      "position": 188,
+      "display_barcode": "724930144",
+      "sellers": [
+       {
+        "id_seller": 1,
+        "score": 5,
+        "base_price": 5998000,
+        "final_price": 2399000,
+        "specific_price": {
+         "specific_price": 1799400,
+         "discount_percent": 70,
+         "discount_amount": 4198600,
+         "from": null,
+         "to": null
+        },
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "724930144",
+        "id_product_attribute": 2585111,
+        "quantity": 0,
+        "has_quantity": 0
+       }
+      ],
+      "has_quantity": 0
+     },
+     {
+      "name": "46",
+      "active": 1,
+      "slug": "46",
+      "show_in_filter": true,
+      "id_size": 230,
+      "extra_barcodes": [],
+      "position": 192,
+      "display_barcode": "724930146",
+      "sellers": [
+       {
+        "id_seller": 1,
+        "score": 5,
+        "base_price": 5998000,
+        "final_price": 2399000,
+        "specific_price": {
+         "specific_price": 1799400,
+         "discount_percent": 70,
+         "discount_amount": 4198600,
+         "from": null,
+         "to": null
+        },
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "724930146",
+        "id_product_attribute": 1379287,
+        "quantity": 0,
+        "has_quantity": 0
+       }
+      ],
+      "has_quantity": 0
+     }
+    ],
+    "sellers": [
+     {
+      "id_seller": 1,
+      "name": "بانی مد"
+     }
+    ],
+    "total_qty": 1,
+    "cash_back": null,
+    "customer_club_coin": 179
+   }
+  ],
+  "product": {
+   "id_product": 270643,
+   "badges": [],
+   "product_name": "مانتو مجلسی کوتاه زنانه تولیکا مدل 72493",
+   "product_description": "<p>مانتو مجلسی کوتاه زنانه تولیکا مدل 72493، یک پوشاک مناسب برای بانوان شیک‌پوش است که به دنبال استایلی مجلسی و مدرن می‌باشند. این مانتو با ارائه ترکیبی از طراحی کاربردی و ظاهر فاخر، در محیط‌های اجتماعی و مراسمات قابل استفاده است.</p><h3>جنس و کیفیت</h3><p>این مانتو از پارچه <strong>نخ‌پنبه</strong>",
+   "product_description_short": "",
+   "product_reference": "AM-TL-72493",
+   "product_meta_title": "مانتو مجلسی کوتاه زنانه تولیکا مدل 72493|رنگ کرم-بانی مد",
+   "product_meta_description": "مانتو مجلسی کوتاه زنانه تولیکا مدل 72493-رنگ :کرم-نوع مانتو:مجلسی-یقه:هفت-طرح:طرحدار-جنس پارچه:نخ‌پنبه-استایل:Fit (متناسب)-بانی مد ",
+   "seo_canonical": "BM-270643/مانتو-زنانه-تولیکا-Tulika-کد-72493.html",
+   "product_meta_keywords": "",
+   "product_link_rewrite": "مانتو-زنانه-تولیکا-Tulika-کد-72493",
+   "product_manufacturer_name": "تولیکا",
+   "product_manufacturer_en_name": "Tulika",
+   "product_manufacturer_logo": "https://www.banimode.com/img/m/447-brand-136x69.jpg",
+   "product_manufacturer_title": "خرید پوشاک زنانه تولیکا | لباس زنانه تولیکا (پرداخت قسطی)",
+   "product_manufacturer_id": 447,
+   "product_manufacturer_slug": "تولیکا",
+   "product_category_default_id": 2015,
+   "product_category_default_name_en": "مانتو کوتاه",
+   "breadcrumbs": [
+    {
+     "id": 2,
+     "name": "همه محصولات",
+     "link": "همه-محصولات"
+    },
+    {
+     "id": 3151,
+     "name": "مد و پوشاک",
+     "link": "fashion-clothing"
+    },
+    {
+     "id": 4,
+     "name": "لباس زنانه",
+     "link": "لباس-زنانه"
+    },
+    {
+     "id": 668,
+     "name": "مانتو",
+     "link": "manto"
+    },
+    {
+     "id": 2015,
+     "name": "مانتو کوتاه",
+     "link": "مانتو-کوتاه"
+    }
+   ],
+   "product_features": [
+    {
+     "title": "نوع مانتو",
+     "value": "مجلسی"
+    },
+    {
+     "title": "یقه",
+     "value": "هفت"
+    },
+    {
+     "title": "آستین",
+     "value": "بلند"
+    },
+    {
+     "title": "طرح",
+     "value": "طرحدار"
+    },
+    {
+     "title": "جنس پارچه",
+     "value": "نخ‌پنبه"
+    },
+    {
+     "title": "استایل",
+     "value": "Fit (متناسب)"
+    },
+    {
+     "title": "ضخامت",
+     "value": "کم"
+    },
+    {
+     "title": "نوع شستشو",
+     "value": "دستی/ماشینی"
+    },
+    {
+     "title": "نحوه شستشو",
+     "value": "به صورت مجزا یا با رنگ‌های مشابه"
+    },
+    {
+     "title": "ماکزیمم دمای شستشو",
+     "value": "30 درجه سانتی‌گراد"
+    },
+    {
+     "title": "ماکزیمم دمای اتوکشی",
+     "value": "110 درجه سانتی‌گراد"
+    },
+    {
+     "title": "مناسب برای",
+     "value": "بانوان"
+    },
+    {
+     "title": "مناسب برای فصول",
+     "value": "چهار فصل"
+    },
+    {
+     "title": "سایر توضیحات",
+     "value": "تمام آستر، دوخت برجسته در لبه‌های کار"
+    },
+    {
+     "title": "برند",
+     "value": "تولیکا"
+    }
+   ],
+   "all_colors": [],
+   "promotion_label": [],
+   "club_label": null,
+   "available_notify": true,
+   "body_type": "none",
+   "view_type": {
+    "color_title": "رنگ",
+    "size_title": "سایز"
+   },
+   "banijet_tag": null,
+   "size_chart_support": false,
+   "new_size_chart_support": false,
+   "product_size_guide": [],
+   "product_category_size_guide": {},
+   "product_score": null,
+   "product_recommendation": null,
+   "has_ar": false,
+   "has_tryon": false,
+   "ar_type": null,
+   "can_return": true
+  }
+ }
+}

@@ -1,0 +1,637 @@
+{
+ "status": "success",
+ "status_code": 200,
+ "message": "All flash sales products.",
+ "data": {
+  "data": [
+   {
+    "id_product": 270643,
+    "id_product_attribute": 0,
+    "id_color": 22,
+    "color_reference": "270643-22",
+    "product_reference": "AM-TL-72493",
+    "link": "BM-270643/مانتو-زنانه-تولیکا-Tulika-کد-72493.html?color=22",
+    "click_id": "",
+    "new_link": "",
+    "color_link": "BM-270643/مانتو-زنانه-تولیکا-Tulika-کد-72493.html?color=22",
+    "color_link_new": "BM-270643/مانتو-زنانه-تولیکا-Tulika-کد-72493.html?color=22",
+    "product_name": "مانتو مجلسی کوتاه زنانه تولیکا مدل 72493",
+    "product_price": 5998100,
+    "product_manufacturer_name": "تولیکا",
+    "product_manufacturer_en_name": "Tulika",
+    "product_manufacturer_id": 447,
+    "product_manufacturer_slug": "تولیکا",
+    "product_category_default_name_en": "",
+    "product_base_price": 5998000,
+    "product_final_price": 1799400,
+    "product_specific_price": {
+     "specific_price": 1799400,
+     "discount_amount": 4198600,
+     "from": "2026-10-20 12:00:00",
+     "to": "2026-10-20 23:59:59",
+     "discount_percent": 70
+    },
+    "color_name": "کرم",
+    "color_slug": "کرم",
+    "color_value": "#FFF5EE",
+    "id_color_group": 0,
+    "images": {
+     "large_default": [
+      "https://www.banimode.com/3988148-large_default/270643.jpg",
+      "https://www.banimode.com/3988169-large_default/270643.jpg"
+     ]
+    },
+    "total_qty": 1,
+    "size": [
+     {
+      "display_barcode": "724930142",
+      "id_size": 134,
+      "name": "42",
+      "extra_barcodes": [],
+      "active": 1,
+      "position": 184,
+      "slug": "42",
+      "show_in_filter": true,
+      "sellers": [
+       {
+        "score": 5,
+        "specific_price": {
+         "specific_price": 1799400,
+         "discount_amount": 4198600,
+         "from": null,
+         "to": null,
+         "discount_percent": 70
+        },
+        "quantity": 1,
+        "id_product_attribute": 1379284,
+        "id_seller": 1,
+        "final_price": 2399000,
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "base_price": 5998000,
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "724930142",
+        "has_quantity": 1
+       }
+      ],
+      "has_quantity": 1
+     },
+     {
+      "display_barcode": "724930138",
+      "id_size": 94,
+      "name": "38",
+      "extra_barcodes": [],
+      "active": 1,
+      "position": 176,
+      "slug": "38",
+      "show_in_filter": true,
+      "sellers": [
+       {
+        "score": 5,
+        "specific_price": {
+         "specific_price": 1799400,
+         "discount_amount": 4198600,
+         "from": null,
+         "to": null,
+         "discount_percent": 70
+        },
+        "quantity": 0,
+        "id_product_attribute": 1379278,
+        "id_seller": 1,
+        "final_price": 2399000,
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "base_price": 5998000,
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "724930138",
+        "has_quantity": 0
+       }
+      ],
+      "has_quantity": 0
+     },
+     {
+      "display_barcode": "724930140",
+      "id_size": 97,
+      "name": "40",
+      "extra_barcodes": [],
+      "active": 1,
+      "position": 180,
+      "slug": "40",
+      "show_in_filter": true,
+      "sellers": [
+       {
+        "score": 5,
+        "specific_price": {
+         "specific_price": 1799400,
+         "discount_amount": 4198600,
+         "from": null,
+         "to": null,
+         "discount_percent": 70
+        },
+        "quantity": 0,
+        "id_product_attribute": 1379281,
+        "id_seller": 1,
+        "final_price": 2399000,
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "base_price": 5998000,
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "724930140",
+        "has_quantity": 0
+       }
+      ],
+      "has_quantity": 0
+     },
+     {
+      "display_barcode": "724930144",
+      "id_size": 131,
+      "name": "44",
+      "extra_barcodes": [],
+      "active": 1,
+      "position": 188,
+      "slug": "44",
+      "show_in_filter": true,
+      "sellers": [
+       {
+        "score": 5,
+        "specific_price": {
+         "specific_price": 1799400,
+         "discount_amount": 4198600,
+         "from": null,
+         "to": null,
+         "discount_percent": 70
+        },
+        "quantity": 0,
+        "id_product_attribute": 2585111,
+        "id_seller": 1,
+        "final_price": 2399000,
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "base_price": 5998000,
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "724930144",
+        "has_quantity": 0
+       }
+      ],
+      "has_quantity": 0
+     },
+     {
+      "display_barcode": "724930146",
+      "id_size": 230,
+      "name": "46",
+      "extra_barcodes": [],
+      "active": 1,
+      "position": 192,
+      "slug": "46",
+      "show_in_filter": true,
+      "sellers": [
+       {
+        "score": 5,
+        "specific_price": {
+         "specific_price": 1799400,
+         "discount_amount": 4198600,
+         "from": null,
+         "to": null,
+         "discount_percent": 70
+        },
+        "quantity": 0,
+        "id_product_attribute": 1379287,
+        "id_seller": 1,
+        "final_price": 2399000,
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "base_price": 5998000,
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "724930146",
+        "has_quantity": 0
+       }
+      ],
+      "has_quantity": 0
+     }
+    ],
+    "promotion_label": null,
+    "banijet_tag": null,
+    "available_notify": true,
+    "flash_sale_message_show": true,
+    "flash_sale_message": {
+     "text_desktop": " باقی مانده ",
+     "text_pwa": " تعداد باقیمانده ",
+     "total_qty": 1
+    },
+    "product_score": null
+   },
+   {
+    "id_product": 518279,
+    "id_product_attribute": 0,
+    "id_color": 34,
+    "color_reference": "518279-34",
+    "product_reference": "51731332",
+    "link": "BM-518279/شوميز-زنانه-جوتي-جينز-كد-51731332.html?color=34",
+    "click_id": "",
+    "new_link": "",
+    "color_link": "BM-518279/شوميز-زنانه-جوتي-جينز-كد-51731332.html?color=34",
+    "color_link_new": "BM-518279/شوميز-زنانه-جوتي-جينز-كد-51731332.html?color=34",
+    "product_name": "شومیز زنانه جوتی جینز مدل 51731332",
+    "product_price": 11999000,
+    "product_manufacturer_name": "جوتی جینز",
+    "product_manufacturer_en_name": "JootiJeans",
+    "product_manufacturer_id": 2,
+    "product_manufacturer_slug": "جوتی_جینز",
+    "product_category_default_name_en": "",
+    "product_base_price": 11999000,
+    "product_final_price": 3599700,
+    "product_specific_price": {
+     "specific_price": 3599700,
+     "discount_amount": 8399300,
+     "from": "2026-10-20 12:00:00",
+     "to": "2026-10-20 23:59:59",
+     "discount_percent": 70
+    },
+    "color_name": "لیمویی",
+    "color_slug": "لیمویی",
+    "color_value": "#f9ff98",
+    "id_color_group": 0,
+    "images": {
+     "large_default": [
+      "https://www.banimode.com/3649469-large_default/518279.jpg",
+      "https://www.banimode.com/3649466-large_default/518279.jpg"
+     ]
+    },
+    "total_qty": 10,
+    "size": [
+     {
+      "display_barcode": "51731332J-8450-M",
+      "id_size": 7,
+      "name": "M",
+      "extra_barcodes": [
+       "J51731332845002001"
+      ],
+      "active": 1,
+      "position": 5,
+      "slug": "M",
+      "show_in_filter": true,
+      "sellers": [
+       {
+        "score": 5,
+        "specific_price": {
+         "specific_price": 3599700,
+         "discount_amount": 8399300,
+         "from": null,
+         "to": null,
+         "discount_percent": 70
+        },
+        "quantity": 1,
+        "id_product_attribute": 2458949,
+        "id_seller": 1,
+        "final_price": 3599700,
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "base_price": 11999000,
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "51731332J-8450-M",
+        "has_quantity": 1
+       }
+      ],
+      "has_quantity": 1
+     },
+     {
+      "display_barcode": "51731332J-8450-L",
+      "id_size": 5,
+      "name": "L",
+      "extra_barcodes": [
+       "J51731332845003001"
+      ],
+      "active": 1,
+      "position": 6,
+      "slug": "L",
+      "show_in_filter": true,
+      "sellers": [
+       {
+        "score": 5,
+        "specific_price": {
+         "specific_price": 3599700,
+         "discount_amount": 8399300,
+         "from": null,
+         "to": null,
+         "discount_percent": 70
+        },
+        "quantity": 9,
+        "id_product_attribute": 2458733,
+        "id_seller": 1,
+        "final_price": 3599700,
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "base_price": 11999000,
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "51731332J-8450-L",
+        "has_quantity": 1
+       }
+      ],
+      "has_quantity": 1
+     },
+     {
+      "display_barcode": "51731332J-8450-XL",
+      "id_size": 2,
+      "name": "XL",
+      "extra_barcodes": [
+       "J51731332845004001"
+      ],
+      "active": 1,
+      "position": 7,
+      "slug": "XL",
+      "show_in_filter": true,
+      "sellers": [
+       {
+        "score": 5,
+        "specific_price": {
+         "specific_price": 3599700,
+         "discount_amount": 8399300,
+         "from": null,
+         "to": null,
+         "discount_percent": 70
+        },
+        "quantity": 15,
+        "id_product_attribute": 2458685,
+        "id_seller": 1,
+        "final_price": 3599700,
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "base_price": 11999000,
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "51731332J-8450-XL",
+        "has_quantity": 1
+       }
+      ],
+      "has_quantity": 1
+     },
+     {
+      "display_barcode": "51731332J-8450-XXL",
+      "id_size": 3,
+      "name": "XXL",
+      "extra_barcodes": [
+       "J51731332845005001"
+      ],
+      "active": 1,
+      "position": 8,
+      "slug": "XXL",
+      "show_in_filter": true,
+      "sellers": [
+       {
+        "score": 5,
+        "specific_price": {
+         "specific_price": 3599700,
+         "discount_amount": 8399300,
+         "from": null,
+         "to": null,
+         "discount_percent": 70
+        },
+        "quantity": 12,
+        "id_product_attribute": 2458796,
+        "id_seller": 1,
+        "final_price": 3599700,
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "base_price": 11999000,
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "51731332J-8450-XXL",
+        "has_quantity": 1
+       }
+      ],
+      "has_quantity": 1
+     },
+     {
+      "display_barcode": "51731332J-8450-S",
+      "id_size": 6,
+      "name": "S",
+      "extra_barcodes": [
+       "J51731332845001001"
+      ],
+      "active": 1,
+      "position": 4,
+      "slug": "S",
+      "show_in_filter": true,
+      "sellers": [
+       {
+        "score": 5,
+        "specific_price": {
+         "specific_price": 3599700,
+         "discount_amount": 8399300,
+         "from": null,
+         "to": null,
+         "discount_percent": 70
+        },
+        "quantity": 0,
+        "id_product_attribute": 2458853,
+        "id_seller": 1,
+        "final_price": 3599700,
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "base_price": 11999000,
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "51731332J-8450-S",
+        "has_quantity": 0
+       }
+      ],
+      "has_quantity": 0
+     }
+    ],
+    "promotion_label": null,
+    "banijet_tag": null,
+    "available_notify": true,
+    "flash_sale_message_show": false,
+    "flash_sale_message": [],
+    "product_score": null
+   },
+   {
+    "id_product": 516335,
+    "id_product_attribute": 0,
+    "id_color": 305,
+    "color_reference": "516335-305",
+    "product_reference": "52258503",
+    "link": "BM-516335/شلوار-اسلش-زنانه-جین-وست-کد-52258503.html?color=305",
+    "click_id": "",
+    "new_link": "",
+    "color_link": "BM-516335/شلوار-اسلش-زنانه-جین-وست-کد-52258503.html?color=305",
+    "color_link_new": "BM-516335/شلوار-اسلش-زنانه-جین-وست-کد-52258503.html?color=305",
+    "product_name": "شلوار اسلش زنانه جین وست کد 52258503",
+    "product_price": 8999000,
+    "product_manufacturer_name": "جین وست",
+    "product_manufacturer_en_name": "Jeanswest",
+    "product_manufacturer_id": 1,
+    "product_manufacturer_slug": "جین_وست",
+    "product_category_default_name_en": "",
+    "product_base_price": 8999000,
+    "product_final_price": 2699700,
+    "product_specific_price": {
+     "specific_price": 2699700,
+     "discount_amount": 6299300,
+     "from": "2026-10-20 12:00:00",
+     "to": "2026-10-20 23:59:59",
+     "discount_percent": 70
+    },
+    "color_name": "بژ روشن",
+    "color_slug": "بژ_روشن",
+    "color_value": "#ffe0a0",
+    "id_color_group": 0,
+    "images": {
+     "large_default": [
+      "https://www.banimode.com/3657959-large_default/516335.jpg",
+      "https://www.banimode.com/3657962-large_default/516335.jpg"
+     ]
+    },
+    "total_qty": 5,
+    "size": [
+     {
+      "display_barcode": "52258503-8182-L",
+      "id_size": 5,
+      "name": "L",
+      "extra_barcodes": [
+       "1230050321831051"
+      ],
+      "active": 1,
+      "position": 6,
+      "slug": "L",
+      "show_in_filter": true,
+      "sellers": [
+       {
+        "score": 5,
+        "specific_price": {
+         "specific_price": 2699700,
+         "discount_amount": 6299300,
+         "from": null,
+         "to": null,
+         "discount_percent": 70
+        },
+        "quantity": 2,
+        "id_product_attribute": 2449079,
+        "id_seller": 1,
+        "final_price": 2699700,
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "base_price": 8999000,
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "52258503-8182-L",
+        "has_quantity": 1
+       }
+      ],
+      "has_quantity": 1
+     },
+     {
+      "display_barcode": "52258503-8182-XL",
+      "id_size": 2,
+      "name": "XL",
+      "extra_barcodes": [
+       "1230050321863051"
+      ],
+      "active": 1,
+      "position": 7,
+      "slug": "XL",
+      "show_in_filter": true,
+      "sellers": [
+       {
+        "score": 5,
+        "specific_price": {
+         "specific_price": 2699700,
+         "discount_amount": 6299300,
+         "from": null,
+         "to": null,
+         "discount_percent": 70
+        },
+        "quantity": 3,
+        "id_product_attribute": 2449052,
+        "id_seller": 1,
+        "final_price": 2699700,
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "base_price": 8999000,
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "52258503-8182-XL",
+        "has_quantity": 1
+       }
+      ],
+      "has_quantity": 1
+     },
+     {
+      "display_barcode": "52258503-8182-S",
+      "id_size": 6,
+      "name": "S",
+      "extra_barcodes": [
+       "1230050321856051"
+      ],
+      "active": 1,
+      "position": 4,
+      "slug": "S",
+      "show_in_filter": true,
+      "sellers": [
+       {
+        "score": 5,
+        "specific_price": {
+         "specific_price": 2699700,
+         "discount_amount": 6299300,
+         "from": null,
+         "to": null,
+         "discount_percent": 70
+        },
+        "quantity": 0,
+        "id_product_attribute": 2449046,
+        "id_seller": 1,
+        "final_price": 4499500,
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "base_price": 8999000,
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "52258503-8182-S",
+        "has_quantity": 0
+       }
+      ],
+      "has_quantity": 0
+     },
+     {
+      "display_barcode": "52258503-8182-M",
+      "id_size": 7,
+      "name": "M",
+      "extra_barcodes": [
+       "1230050321849051"
+      ],
+      "active": 1,
+      "position": 5,
+      "slug": "M",
+      "show_in_filter": true,
+      "sellers": [
+       {
+        "score": 5,
+        "specific_price": {
+         "specific_price": 2699700,
+         "discount_amount": 6299300,
+         "from": null,
+         "to": null,
+         "discount_percent": 70
+        },
+        "quantity": 0,
+        "id_product_attribute": 2449082,
+        "id_seller": 1,
+        "final_price": 2699700,
+        "specific_price_date_from": "2026-10-20 12:00:00",
+        "base_price": 8999000,
+        "specific_price_date_to": "2026-10-20 23:59:59",
+        "barcode": "52258503-8182-M",
+        "has_quantity": 0
+       }
+      ],
+      "has_quantity": 0
+     }
+    ],
+    "promotion_label": null,
+    "banijet_tag": null,
+    "available_notify": true,
+    "flash_sale_message_show": true,
+    "flash_sale_message": {
+     "text_desktop": " باقی مانده ",
+     "text_pwa": " تعداد باقیمانده ",
+     "total_qty": 5
+    },
+    "product_score": null
+   }
+  ],
+  "links": {},
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 27,
+   "per_page": 24,
+   "to": 25,
+   "total": 639
+  },
+  "filters": [],
+  "bani_time": "12",
+  "timer": 29490000,
+  "time": "15:48:29"
+ }
+}
