@@ -1,13 +1,13 @@
 [project]
 name = "banimode-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Unofficial read-only MCP server for Banimode: search fashion, compare prices, sizes and stock, find flash-sale deals."
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "Sepehr Radmard", email = "sepehrr80@gmail.com" }]
 requires-python = ">=3.10"
-keywords = ["mcp", "model-context-protocol", "banimode", "iran", "e-commerce", "shopping", "fashion", "clothing"]
+keywords = ["mcp", "mcp-server", "model-context-protocol", "ai-agents", "iran", "persian", "banimode", "fashion", "clothing", "shoes", "e-commerce", "price-comparison", "flash-sale", "toman"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
