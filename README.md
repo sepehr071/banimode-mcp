@@ -30,7 +30,7 @@ compare prices in Toman, check which sizes are in stock, read customer reviews a
 - **Do not use when:** the user wants to buy (no cart or checkout) or needs the shipping fee (shown only at checkout).
 - **Output:** compact JSON. Prices in Toman: `final_price` is what the buyer pays, `price` is the list price before discount (left out when equal), `discount_pct` is a whole percent. A search card is one product in one color, so an id can repeat with other colors; `bm_product` lists every color with stock per size.
 - **Machine-readable:** [`server.json`](https://github.com/sepehr071/banimode-mcp/blob/main/server.json) and the
-  [awesome-iran-mcp catalog](https://github.com/sepehr071/awesome-iran-mcp) (`TOOLS.md`, `servers.json`, `llms.txt`).
+  [iran-mcp catalog](https://github.com/sepehr071/iran-mcp) (`TOOLS.md`, `servers.json`, `llms.txt`).
 
 ## Why
 
@@ -313,7 +313,7 @@ Releases: bump the version in `pyproject.toml` and `server.json`, then push a `v
 
 ## Related servers
 
-- [awesome-iran-mcp](https://github.com/sepehr071/awesome-iran-mcp): catalog of all Iranian-service MCP servers
+- [iran-mcp](https://github.com/sepehr071/iran-mcp): catalog of all Iranian-service MCP servers
 - [Digikala MCP server](https://github.com/sepehr071/digikala-mcp) for Iran's largest online store
 - [Khanoumi MCP server](https://github.com/sepehr071/khanoumi-mcp) for beauty and personal care
 - [Torob MCP server](https://github.com/sepehr071/torob-mcp) for price comparison across shops
@@ -327,9 +327,9 @@ Please keep request rates reasonable.
 
 ## Author
 
-<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/awesome-iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web. LinkedIn: linkedin.com/in/sepehr-radmard" width="100%"></a>
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web. LinkedIn: linkedin.com/in/sepehr-radmard" width="100%"></a>
 
-Built and maintained by **Sepehr Radmard** (سپهر رادمرد). Connect on [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) or follow [@sepehr071 on GitHub](https://github.com/sepehr071) for more MCP servers for Iranian websites, all listed in [awesome-iran-mcp](https://github.com/sepehr071/awesome-iran-mcp). If this saves you time, a star on the repo helps other people find it.
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد). Connect on [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) or follow [@sepehr071 on GitHub](https://github.com/sepehr071) for more MCP servers for Iranian websites, all listed in [iran-mcp](https://github.com/sepehr071/iran-mcp). If this saves you time, a star on the repo helps other people find it.
 
 ## License
 
