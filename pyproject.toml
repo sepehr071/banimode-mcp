@@ -29,6 +29,7 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/sepehr071/banimode-mcp"
 Issues = "https://github.com/sepehr071/banimode-mcp/issues"
+Website = "https://mcpfarsi.ir/servers/banimode/"
 
 [project.scripts]
 banimode-mcp = "banimode_mcp.server:main"

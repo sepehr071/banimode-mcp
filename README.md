@@ -11,6 +11,7 @@ compare prices in Toman, check which sizes are in stock, read customer reviews a
 [![CI](https://github.com/sepehr071/banimode-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/sepehr071/banimode-mcp/actions/workflows/ci.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.github.sepehr071%2Fbanimode--mcp-7c3aed)](https://registry.modelcontextprotocol.io/?q=banimode-mcp)
 [![License: MIT](https://img.shields.io/badge/license-MIT-16a34a)](https://github.com/sepehr071/banimode-mcp/blob/main/LICENSE)
+[![mcpfarsi](https://mcpfarsi.ir/badge/banimode.svg)](https://mcpfarsi.ir/servers/banimode/)
 
 [![Install in Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=banimode&config=eyJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyJiYW5pbW9kZS1tY3AiXX0=)
 [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_banimode--mcp-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=banimode&config=%7B%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22banimode-mcp%22%5D%7D)
@@ -319,6 +320,7 @@ Releases: bump the version in `pyproject.toml` and `server.json`, then push a `v
 - [Torob MCP server](https://github.com/sepehr071/torob-mcp) for price comparison across shops
 - [Shopino MCP server](https://github.com/sepehr071/shopino-mcp) for fashion shopping
 - [Basalam MCP server](https://github.com/sepehr071/basalam-mcp) for a marketplace of independent sellers
+- Listed on [mcpfarsi.ir](https://mcpfarsi.ir/servers/banimode/), the Persian MCP marketplace
 
 ## Disclaimer
 
