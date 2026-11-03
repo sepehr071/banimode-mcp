@@ -12,15 +12,40 @@ async def test_bm_search_cards_and_params(client, api):
             "bm_search", {"query": "مانتو", "sort": "cheapest", "min_price": 100000, "max_price": 300000, "limit": 3}
         )
     ).structured_content
-    assert out["total"] == 328 and out["page"] == 1 and out["pages"] == 110 and len(out["products"]) == 3
+    assert out["page"] == 1 and len(out["products"]) == 3  # a sorted search reads 50 rows and keeps the real matches
     p = out["products"][0]
     assert p["id"] and p["title"] and p["final_price"] > 0 and p["url"].startswith("https://www.banimode.com/BM-")
     assert all(v is not None for v in p.values())
     q = api.params()
-    assert q["q"] == "مانتو" and q["page_size"] == "3" and q["filter[total_qty][gt]"] == "0"
+    assert q["q"] == "مانتو" and q["page_size"] == "50" and q["filter[total_qty][gt]"] == "0"
     assert q["sort[asc]"] == "price"
     # Toman -> Rial for the API
     assert q["filter[product_final_price][gte]"] == "1000000" and q["filter[product_final_price][lte]"] == "3000000"
+
+
+async def test_bm_search_sorted_keeps_only_title_matches(client, api):
+    def row(i, name):
+        return {"id_product": i, "product_name": name, "product_base_price": 1000, "product_final_price": 1000}
+
+    page = {"data": [row(1, "پالتو زنانه الف"), row(2, "کراپ کت زنانه"), row(3, "پالتوي زنانه ب")]}
+    api["v4/products/"] = {"data": {"data": page["data"], "meta": {"total": 3, "current_page": 1, "last_page": 1}}}
+    out = (await client.call_tool("bm_search", {"query": "پالتو زنانه", "sort": "cheapest"})).structured_content
+    assert [p["id"] for p in out["products"]] == [1, 3] and out["total"] == 2
+
+
+async def test_card_discount_pct_trusts_prices_over_stale_spec():
+    from banimode_mcp.catalog import card
+
+    c = card(
+        {
+            "id_product": 9,
+            "product_name": "x",
+            "product_base_price": 220000,
+            "product_final_price": 176000,
+            "product_specific_price": {"discount_percent": 5},
+        }
+    )
+    assert c["price"] == 22000 and c["final_price"] == 17600 and c["discount_pct"] == 20
 
 
 async def test_card_prices_are_toman_with_discount():
@@ -64,13 +89,14 @@ async def test_bm_browse_needs_a_filter(client, api):
 async def test_bm_categories(client, api):
     api["v4/products/"] = fixture("facets.json")
     top = (await client.call_tool("bm_categories", {})).structured_content
+    calls = len(api.calls)
     assert top["total"] == 2 and all(c["level"] == 2 for c in top["categories"])
     first = top["categories"][0]
     kids = (await client.call_tool("bm_categories", {"parent_id": first["id"]})).structured_content
     assert kids["categories"] and all(c["parent"] == first["name"] for c in kids["categories"])
     hit = (await client.call_tool("bm_categories", {"query": kids["categories"][0]["name"]})).structured_content
     assert hit["categories"][0]["id"] == kids["categories"][0]["id"]
-    assert len(api.calls) == 1  # facets are cached
+    assert len(api.calls) == calls  # the tree is cached
 
 
 async def test_bm_brands(client, api):

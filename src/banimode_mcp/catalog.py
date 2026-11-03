@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 from typing import Annotated, Any, Literal
 
 from pydantic import Field
@@ -17,6 +18,7 @@ SORTS = {
     "newest": ("desc", "date"),
 }
 FACET_TTL = 3600
+SCAN_PAGES = 8  # sorted search: most pages of 50 read to find rows that really match the words
 Sort = Literal["relevance", "cheapest", "expensive", "discount", "newest"]
 
 
@@ -29,7 +31,8 @@ def card(p: dict[str, Any]) -> dict[str, Any]:
     """One listing entry (one product in one color), trimmed. Null/zero fields are left out."""
     base, final = toman(p.get("product_base_price") or p.get("product_price")), toman(p.get("product_final_price"))
     spec = p.get("product_specific_price") or {}
-    pct = spec.get("discount_percent") or (round(100 - 100 * final / base) if base > final else 0)
+    # the spec percent can be stale (flash sales showed 5 for 22,000 -> 17,600), so trust the prices
+    pct = round(100 - 100 * final / base) if base > final else spec.get("discount_percent")
     out = {
         "id": p["id_product"],
         "title": p["product_name"],
@@ -56,6 +59,11 @@ async def _facets() -> dict[str, Any]:
     return await cached("facets", FACET_TTL, make)
 
 
+def _fold(text: str) -> str:
+    """Lowercase and map Arabic ي/ك (used in many titles) to Persian ی/ک."""
+    return text.replace("ي", "ی").replace("ك", "ک").lower()
+
+
 async def _size_id(name: str) -> int:
     sizes = (await _facets())["sizes"]
     for s in sizes:
@@ -78,6 +86,7 @@ async def _listing(
     limit: int = 24,
 ) -> dict[str, Any]:
     params: dict[str, Any] = {"page": page, "page_size": limit}
+    scan = bool(query) and sort in SORTS
     if query:
         params["q"] = query
     if category_id:
@@ -95,6 +104,26 @@ async def _listing(
     if sort in SORTS:
         direction, field = SORTS[sort]
         params[f"sort[{direction}]"] = field
+    if scan:
+        # The site matches the words loosely (category, tags); a price sort then floats unrelated items up.
+        # Read sorted pages and keep rows that carry every word in title, brand or color.
+        words = [_fold(w) for w in query.split()]
+        rows, n = [], 1
+        while True:
+            data = (await api("v4/products/", {**params, "page": n, "page_size": 50}))["data"]
+            for p in data["data"]:
+                hay = _fold(f"{p.get('product_name')} {p.get('product_manufacturer_name')} {p.get('color_name')}")
+                if all(w in hay for w in words):
+                    rows.append(p)
+            if len(rows) >= page * limit or n >= data["meta"]["last_page"] or n >= SCAN_PAGES:
+                break
+            n += 1
+        return {
+            "total": len(rows),
+            "page": page,
+            "pages": -(-len(rows) // limit),
+            "products": [card(p) for p in rows[(page - 1) * limit : page * limit]],
+        }
     data = (await api("v4/products/", params))["data"]
     meta = data["meta"]
     return {
@@ -193,6 +222,29 @@ def _flat_categories(tree: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return out
 
 
+async def _category_nodes() -> list[dict[str, Any]]:
+    """Every category node. The unfiltered facets list only part of the tree (no مانتو, thin women's sections), but
+    facets asked under a category list that branch in full, so read each child of the biggest section too."""
+
+    async def make() -> list[dict[str, Any]]:
+        tops = (await _facets())["categories"]
+        nodes = _flat_categories(tops)
+        big = max(tops, key=lambda t: len(t.get("items") or []))
+        subs = [c["id"] for c in big.get("items") or [] if c["level"] == 3]
+
+        async def branch(cid: int) -> list[dict[str, Any]]:
+            body = await api(
+                "v4/products/", {"page_size": 1, "need_filter": 1, "filter[product_categories.id][eq]": cid}
+            )
+            return _flat_categories(body["data"]["filters"]["categories"])
+
+        for found in await asyncio.gather(*(branch(c) for c in subs)):
+            nodes += found
+        return list({n["id"]: n for n in nodes}.values())
+
+    return await cached("category_nodes", FACET_TTL, make)
+
+
 @tool("Product categories")
 async def bm_categories(
     query: Annotated[
@@ -207,7 +259,7 @@ async def bm_categories(
 
     Returns id, name, level (deeper = narrower) and parent_id. Pass an id to bm_browse or bm_search.
     """
-    nodes = _flat_categories((await _facets())["categories"])
+    nodes = await _category_nodes()
     names = {n["id"]: n["name"] for n in nodes}
     if query:
         hits = [n for n in nodes if query.strip() in n["name"]]
