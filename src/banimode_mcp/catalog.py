@@ -139,23 +139,16 @@ _Q = Annotated[
     Field(
         min_length=2,
         max_length=100,
-        description="Search words, Persian works best, e.g. 'مانتو مجلسی' or 'کفش اسپرت مردانه'.",
+        description="Search words, Persian works best, e.g. 'مانتو مجلسی'.",
     ),
 ]
-_SORT = Annotated[
-    Sort,
-    Field(description="'relevance' (default), 'cheapest', 'expensive', 'discount' (biggest saving first), 'newest'."),
-]
-_STOCK = Annotated[
-    bool, Field(description="Only products with stock (default true). Sold-out items clutter price sorts.")
-]
-_MIN = Annotated[int | None, Field(ge=0, description="Minimum price in Toman, e.g. 500000.")]
-_MAX = Annotated[int | None, Field(ge=0, description="Maximum price in Toman, e.g. 2000000.")]
-_SIZE = Annotated[
-    str | None, Field(max_length=20, description="One size label to require, e.g. 'M', 'XL', '42', 'فری سایز'.")
-]
-_PAGE = Annotated[int, Field(ge=1, le=200, description="Page number, from 1 (the site caps results at 10000).")]
-_LIMIT = Annotated[int, Field(ge=1, le=50, description="Products per page (about 0.4 KB each).")]
+_SORT = Annotated[Sort, Field(description="'discount' = biggest saving first.")]
+_STOCK = Annotated[bool, Field(description="Only products with stock.")]
+_MIN = Annotated[int | None, Field(ge=0, description="Minimum price, Toman.")]
+_MAX = Annotated[int | None, Field(ge=0, description="Maximum price, Toman.")]
+_SIZE = Annotated[str | None, Field(max_length=20, description="Size label, e.g. 'M', '42', 'فری سایز'.")]
+_PAGE = Annotated[int, Field(ge=1, le=200, description="Page number.")]
+_LIMIT = Annotated[int, Field(ge=1, le=50, description="Products per page.")]
 
 
 @tool("Search products")
@@ -166,19 +159,14 @@ async def bm_search(
     min_price: _MIN = None,
     max_price: _MAX = None,
     size: _SIZE = None,
-    category_id: Annotated[
-        int | None, Field(ge=1, description="Optional category id from bm_categories to narrow the search.")
-    ] = None,
-    brand_id: Annotated[
-        int | None, Field(ge=1, description="Optional brand id from bm_brands to narrow the search.")
-    ] = None,
+    category_id: Annotated[int | None, Field(ge=1, description="Category id from bm_categories.")] = None,
+    brand_id: Annotated[int | None, Field(ge=1, description="Brand id from bm_brands.")] = None,
     page: _PAGE = 1,
     limit: _LIMIT = 20,
 ) -> dict[str, Any]:
     """Search Banimode fashion products by keyword and return priced cards with discount, color and sizes in stock.
 
-    Each card is one product in one color (the same id can repeat with other colors). Use for "cheapest
-    white sneakers", "men's jeans under 1M". Call bm_product with the id for every size, stock and color.
+    Each card is one product in one color (ids repeat). Call bm_product for all colors and sizes.
     """
     return await _listing(
         query=query, category_id=category_id, brand_id=brand_id, sort=sort, in_stock=in_stock,
@@ -188,10 +176,8 @@ async def bm_search(
 
 @tool("Browse a category or brand")
 async def bm_browse(
-    category_id: Annotated[
-        int | None, Field(ge=1, description="Category id from bm_categories, e.g. 668 (مانتو).")
-    ] = None,
-    brand_id: Annotated[int | None, Field(ge=1, description="Brand id from bm_brands, e.g. 4124 (ایکات).")] = None,
+    category_id: Annotated[int | None, Field(ge=1, description="Category id from bm_categories.")] = None,
+    brand_id: Annotated[int | None, Field(ge=1, description="Brand id from bm_brands.")] = None,
     sort: _SORT = "relevance",
     in_stock: _STOCK = True,
     min_price: _MIN = None,
@@ -202,7 +188,7 @@ async def bm_browse(
 ) -> dict[str, Any]:
     """List the products of a category and/or brand, with the same filters and cards as bm_search.
 
-    Give at least one of category_id or brand_id. Use after bm_categories or bm_brands to see a whole section.
+    Give category_id or brand_id (at least one).
     """
     if not category_id and not brand_id:
         raise ApiError("Give category_id (from bm_categories) or brand_id (from bm_brands).")
@@ -247,17 +233,13 @@ async def _category_nodes() -> list[dict[str, Any]]:
 
 @tool("Product categories")
 async def bm_categories(
-    query: Annotated[
-        str | None, Field(min_length=2, max_length=50, description="Optional name part, e.g. 'مانتو' or 'کیف'.")
-    ] = None,
-    parent_id: Annotated[
-        int | None, Field(ge=1, description="List the children of this category id (e.g. 4 = لباس زنانه).")
-    ] = None,
-    limit: Annotated[int, Field(ge=1, le=100, description="Maximum categories returned.")] = 40,
+    query: Annotated[str | None, Field(min_length=2, max_length=50, description="Name part, e.g. 'مانتو'.")] = None,
+    parent_id: Annotated[int | None, Field(ge=1, description="List children of this category id.")] = None,
+    limit: Annotated[int, Field(ge=1, le=100, description="Max categories.")] = 40,
 ) -> dict[str, Any]:
     """Find category ids by name, or walk the tree: no arguments lists the top sections, parent_id lists children.
 
-    Returns id, name, level (deeper = narrower) and parent_id. Pass an id to bm_browse or bm_search.
+    Pass an id to bm_browse or bm_search.
     """
     nodes = await _category_nodes()
     names = {n["id"]: n["name"] for n in nodes}
@@ -276,18 +258,13 @@ async def bm_categories(
 @tool("Brands")
 async def bm_brands(
     query: Annotated[
-        str | None,
-        Field(
-            min_length=2,
-            max_length=50,
-            description="Optional brand name part, Persian or Latin, e.g. 'ایکات' or 'nike'.",
-        ),
+        str | None, Field(min_length=2, max_length=50, description="Brand name part, Persian or Latin.")
     ] = None,
-    limit: Annotated[int, Field(ge=1, le=100, description="Maximum brands returned.")] = 40,
+    limit: Annotated[int, Field(ge=1, le=100, description="Max brands.")] = 40,
 ) -> dict[str, Any]:
     """Find brand ids by name (Persian or Latin), or list the first brands when no name is given.
 
-    Pass the id to bm_browse or bm_search as brand_id.
+    Pass the id as brand_id.
     """
     brands = (await _facets())["manufacturers"]
     if query:
@@ -301,13 +278,12 @@ async def bm_brands(
 
 @tool("Flash-sale deals")
 async def bm_deals(
-    page: Annotated[int, Field(ge=1, le=100, description="Page number, from 1 (24 deals per page).")] = 1,
-    limit: Annotated[int, Field(ge=1, le=24, description="Deals returned from the page.")] = 24,
+    page: Annotated[int, Field(ge=1, le=100, description="Page number (24 deals per page).")] = 1,
+    limit: Annotated[int, Field(ge=1, le=24, description="Deals returned.")] = 24,
 ) -> dict[str, Any]:
     """List today's flash-sale products (deep time-limited discounts) with the time left.
 
-    Cards show final_price, discount_pct and left (units in stock). Use for "what is on sale right now"; call
-    bm_product for sizes. The list changes daily and sells out quickly.
+    Use for "what is on sale right now"; call bm_product for sizes.
     """
     body = await api("v4/products/flash-sales-new", {"page": page})
     data = body["data"]
