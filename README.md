@@ -157,22 +157,6 @@ It is a standard stdio MCP server: run `uvx banimode-mcp`, or `pip install banim
 | `bm_product` | Get one product: every color with its price, discount, stock per size, features and short description. |
 | `bm_reviews` | Read customer reviews of a product: stars (1-5, null if only text), text, date and the shop's answer. |
 
-## How it works
-
-```text
-  AI agent  (Claude, Cursor, Copilot, ...)
-      │
-      │  MCP over stdio
-      ▼
-  banimode-mcp  (runs on your machine)
-      │
-      │  HTTPS
-      └──────▶  mobapi.banimode.com   products, categories, brands, deals, reviews
-```
-
-`banimode-mcp` runs locally and calls the open JSON API that the banimode.com website itself uses. There is no hosted server in between
-and no API key. Requests are throttled and retried on timeouts, 429 and 5xx.
-
 ## Good to know
 
 - **Prices are in Toman.** The API uses Rial; the server divides by 10 so numbers match the website.
